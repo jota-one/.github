@@ -1,14 +1,23 @@
 title: "[General] "
 labels: ["General Introduction"]
 body:
-  - type: markdown
+  - type: input
+    id: decision
     attributes:
-      value: |
-        This is text that will show up in the template!
+      label: Decision
+      description: Short title of solved problem and solution
   - type: textarea
-    id: improvements
+    id: problem
     attributes:
-      label: Top 3 improvements
+      label: Context and Problem Statement
+      description: "Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems."
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Considered Options
       description: "What are the top 3 improvements we could make to this project?"
       value: |
         1.
@@ -18,38 +27,13 @@ body:
       render: bash
     validations:
       required: true
-  - type: markdown
+  - type: textarea
+    id: decision
     attributes:
+      label: Decision Outcome
+      description: "justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)"
       value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+        Chosen option: "{title of option 1}", because....
+      render: bash
     validations:
       required: true
-  - type: dropdown
-    id: download
-    attributes:
-      label: Which area of this project could be most improved?
-      options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
-    validations:
-      required: true
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
