@@ -1,10 +1,10 @@
-title: "[Decision] "
+title: "[Décision] "
 body:
   - type: markdown
     id: decision
     attributes:
       value: |
-        :point_up: Short title of solved problem and solution
+        :point_up: Titre court du problème résolu et de la solution
   - type: textarea
     id: problem
     attributes:
