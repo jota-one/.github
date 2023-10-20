@@ -1,5 +1,4 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: "[Decision] "
 body:
   - type: markdown
     id: decision
