@@ -1,11 +1,11 @@
 title: "[General] "
 labels: ["General Introduction"]
 body:
-  - type: input
+  - type: markdown
     id: decision
     attributes:
-      label: Decision
-      description: Short title of solved problem and solution
+      value: |
+        :point_up: Short title of solved problem and solution
   - type: textarea
     id: problem
     attributes:
