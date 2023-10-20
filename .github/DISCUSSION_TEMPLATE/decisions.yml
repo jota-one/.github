@@ -8,31 +8,28 @@ body:
   - type: textarea
     id: problem
     attributes:
-      label: Context and Problem Statement
-      description: "Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems."
-      render: bash
+      label: Contexte et description du problème
+      description: "Décrivez le contexte et l'énoncé du problème, p. ex. en utilisant deux ou trois phrases ou sous la forme d'une histoire illustrative. Vous pouvez également articuler le problème sous forme de question et ajouter des liens vers des tableaux de collaboration ou des systèmes de gestion des problèmes."
     validations:
       required: true
   - type: textarea
     id: options
     attributes:
-      label: Considered Options
-      description: "What are the top 3 improvements we could make to this project?"
+      label: Options considérées
+      description: "Quelles sont les options envisagées pour régler le problème? Év. quels sont les avantages et inconvénients de chacune?"
       value: |
         1.
         2.
         3.
         ...
-      render: bash
     validations:
       required: true
   - type: textarea
     id: outcome
     attributes:
-      label: Decision Outcome
-      description: "justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)"
+      label: Résultat de la décision
+      description: "Notez l'option retenue et justifiez-en la raison."
       value: |
-        Chosen option: "{title of option 1}", because....
-      render: bash
+        Options retenue: Option X -> titre de l'option X. Nous avons retenu cette options car...
     validations:
       required: true
