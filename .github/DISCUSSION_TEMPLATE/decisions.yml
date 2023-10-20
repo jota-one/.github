@@ -28,7 +28,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: decision
+    id: outcome
     attributes:
       label: Decision Outcome
       description: "justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)"
